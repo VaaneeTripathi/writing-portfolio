@@ -483,6 +483,9 @@ html[data-view="piece"]:not(.is-plain) #moonthread.show { display: block; }
 .about-panel h3 { font: 600 19px/1.2 var(--font-display); margin: 16px 0 4px; }
 .about-panel p { font: 400 15px/1.55 var(--font-serif); margin: 0; }
 .about-panel .about-k { font: 500 12px/1.3 var(--font-serif); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-muted); }
+.about-list { margin: 12px 0 0; padding: 0 0 0 1.1em; }
+.about-list li { font: 400 15px/1.55 var(--font-serif); margin: 0 0 .7em; padding-left: .2em; }
+.about-list li::marker { color: var(--henna); }
 .about-panel .about-k.small { margin-top: 18px; letter-spacing: .04em; text-transform: none; font-size: 13px; font-style: italic; }
 .about-panel::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; }   /* a bridge, so the note stays open on the way to it */
 @media print { .about { display: none; } }
@@ -752,18 +755,13 @@ document.body.classList.add('hu-paper');})();
 <div class="about" id="about">
   <button class="about-btn" type="button" aria-expanded="false" aria-controls="about-panel" aria-label="About this site">i</button>
   <aside class="about-panel" id="about-panel" role="dialog" aria-label="About this site">
-    <p class="about-k">Behind the pages</p>
-    <h3>A shelf of six</h3>
-    <p>Each piece is a book on one shelf, its spine as tall as the piece is long. Open one and it becomes its own small world, built around what the writing is doing.</p>
-    <h3>Paper, ink, type</h3>
-    <p>The ground is Sanganer handmade cotton paper, fibres and flecks drawn in code. Titles are in Cormorant Garamond, reading text in EB Garamond, and the initials of my name bloom like block-printed florals. Every colour on the site comes from <em>Hues in Ink</em>, my first book, which pairs colours with feelings.</p>
-    <h3>Painted, not photographed</h3>
-    <p>There are no photographs or stock images. Each scene is laid out as a simple 3D model so its perspective holds, then painted as watercolour in code: layered washes, darker edges where the paint dries, pigment settling into the paper, and a little bleed.</p>
-    <h3>Each piece moves differently</h3>
-    <p><em>ring</em>: a teak door opens onto darkness as the poem is read. <em>Radha’s First</em>: a painting beside every two paragraphs, each stirring once. <em>Kheer</em>: grey lifts to light, tear blots give way to saffron in bloom. <em>Kids, Today We Eat Leftovers</em>: the feast is taken apart until one plate and one shadow remain. <em>11:11</em>: nothing moves but the clouds, and a thread from the moon. <em>Hues in Ink</em>: the colours spread.</p>
-    <h3>Read plainly</h3>
-    <p>One switch turns everything off and leaves the words on paper, for anyone who would rather just read.</p>
-    <p class="about-k small">Designed and written by Vaanee Tripathi, built with Claude as a collaborator. Everything is in one self-contained page.</p>
+    <p class="about-k">About this website</p>
+    <ul class="about-list">
+      <li>The shelf has six books, each of them leads to something I have written. The length and width of the books is determined by the length of the actual piece.</li>
+      <li>The background resembles Sanganer handmade cotton paper. Throughout the website, the motifs are inherently Indian, which is meant to celebrate how my identity creates an undercurrent in all my work.</li>
+      <li>Every picture is meant to complement the reading journey. All of them are watercolour washes, to ground the experience in paper.</li>
+      <li><em>Read plainly</em> – there is a switch at the top that disables the animations and visuals to enable a simpler read.</li>
+    </ul>
   </aside>
 </div>
 <svg id="moonthread" aria-hidden="true"><defs><mask id="mt-mask" maskUnits="userSpaceOnUse"><path id="mt-reveal" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/></mask>
